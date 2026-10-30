@@ -21,7 +21,9 @@ export async function POST(request) {
       typeof submissionId !== 'string' || !/^[0-9a-f-]{36}$/i.test(submissionId)) {
     return reply('Please enter a valid name, email and city of interest. Keep your message under 4,000 characters.', 400);
   }
-  const { RESEND_API_KEY, EMAIL_FROM, FRANCHISE_EMAIL_TO } = process.env;
+  const RESEND_API_KEY = process.env.RESEND_API_KEY?.trim();
+  const EMAIL_FROM = process.env.EMAIL_FROM?.trim();
+  const FRANCHISE_EMAIL_TO = process.env.FRANCHISE_EMAIL_TO?.trim();
   if (!RESEND_API_KEY || !EMAIL_FROM || !FRANCHISE_EMAIL_TO) return reply('Enquiries are temporarily unavailable. Please try again later.', 503);
   try {
     const response = await fetch('https://api.resend.com/emails', {
