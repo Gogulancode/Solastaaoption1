@@ -1,0 +1,22 @@
+.home-services{padding-block:var(--section-space)}
+.hero + .home-services{padding-top:0}
+.salon-benefits{list-style:none;margin:0 0 32px;padding:0 0 28px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;border-bottom:1px solid var(--line)}
+.salon-benefits li{display:flex;align-items:flex-start;gap:16px;min-width:0}
+.salon-benefits svg{flex:0 0 32px;width:32px;height:32px;color:var(--gold);margin-top:3px}
+.salon-benefits h3{font-family:'Jost',sans-serif;font-size:13px;line-height:1.4;font-weight:500;margin-bottom:7px;text-wrap:initial}
+.salon-benefits p{font-size:12px;line-height:1.6;max-width:24ch}
+.home-services-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:36px;align-items:start}
+.home-services-intro .eyebrow{margin-bottom:12px}
+.home-services-intro h2{font-size:40px;margin-bottom:16px}
+.home-services-intro>p:not(.eyebrow){font-size:14px;line-height:1.7;margin-bottom:22px}
+.home-services-intro .btn{font-size:12px;gap:10px;padding:12px 16px;min-height:44px}
+.home-services-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.home-service-tile{min-width:0;display:flex;flex-direction:column;border:1px solid #e6e1d7;background:#fffdf8;transition:border-color .2s}
+.home-service-tile:hover{border-color:var(--gold)}
+.home-service-tile>img{aspect-ratio:1/1.12;object-fit:cover}
+.home-service-tile>div{position:relative;padding:16px 30px 18px 14px;flex:1}
+.home-service-tile h3{font-family:'Jost',sans-serif;font-size:14px;font-weight:500;margin-bottom:8px}
+.home-service-tile p{font-size:12px;line-height:1.6}
+.home-service-tile span{position:absolute;bottom:18px;right:12px;color:var(--gold);font-size:15px}
+@media(max-width:1100px){.home-services-layout{grid-template-columns:1fr;gap:24px}.home-services-intro{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;align-items:center}.home-services-intro .eyebrow{grid-column:1/-1}.home-services-intro h2{grid-row:2/4;margin:0}.home-services-intro .btn{justify-self:start}.salon-benefits{gap:20px}.salon-benefits li{gap:10px}}
+@media(max-width:760px){.salon-benefits{grid-template-columns:1fr 1fr;gap:24px 20px;margin-bottom:24px;padding-bottom:24px}.salon-benefits svg{flex-basis:26px;width:26px;height:26px}.salon-benefits h3{font-size:12px}.salon-benefits p{font-size:11px}.home-services-intro{display:block}.home-services-intro h2{font-size:36px;margin-bottom:14px}.home-services-intro>p:not(.eyebrow){max-width:44ch;margin-bottom:18px}.home-services-cards{grid-template-columns:1fr 1fr;gap:14px}.home-service-tile>img{aspect-ratio:1.1}.home-service-tile>div{padding:14px 28px 16px 12px}}

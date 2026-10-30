@@ -1,0 +1,7 @@
+.env*
+review/
+tests/
+assets/
+.npm-cache/
+node_modules/
+.next/

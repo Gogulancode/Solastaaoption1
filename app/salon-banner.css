@@ -1,0 +1,35 @@
+.salon-banner{position:relative;isolation:isolate;background:#f5eee4;overflow:hidden}
+.salon-banner-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1}
+.salon-banner-inner{min-height:clamp(540px,44.4vw,760px);display:flex;align-items:center;padding-block:48px}
+.salon-banner-copy{width:46%;max-width:520px}
+.salon-banner-copy .eyebrow{font-size:13px;margin-bottom:22px}
+.salon-banner h1{font-size:clamp(62px,6vw,86px);line-height:1.02;letter-spacing:-1.5px}
+.salon-banner-copy>p{font-size:17px;line-height:1.75;margin:24px 0 30px;max-width:38ch;color:#484639}
+.salon-banner .actions{gap:12px}
+.salon-banner .btn.outline{background:#fbf9f2b3;border-color:#a59d89}
+.salon-banner .discover{font-size:13px;letter-spacing:0;margin-top:24px;border-bottom:1px solid #bcb39f;min-height:30px;color:var(--ink)}
+.salon-banner + .home-services{padding-top:32px}
+@media(max-width:1100px) and (min-width:761px){.salon-banner-copy{width:46%}.salon-banner-inner{min-height:470px}.salon-banner h1{font-size:56px}.salon-banner-copy>p{font-size:15px}.salon-banner .btn{font-size:12px;padding-inline:14px}}
+@media(max-width:760px){
+ .salon-banner-inner{min-height:0;align-items:flex-start;padding-block:32px 350px}
+ .salon-banner-copy{width:100%;max-width:520px}
+ .salon-banner h1{font-size:clamp(52px,12vw,72px)}
+ .salon-banner-image{inset:auto 0 0;height:320px;object-position:82% center}
+ .salon-banner-copy .eyebrow{margin-bottom:16px}
+ .salon-banner-copy>p{font-size:15px;margin:20px 0 24px}
+ .salon-banner .btn{font-size:12px;padding:13px 16px;gap:12px}
+ .salon-banner .discover{margin-top:18px}
+ .salon-banner + .home-services{padding-top:24px}
+}
+
+@media(max-width:760px){
+ .salon-banner-inner{min-height:0;padding-block:24px 28px;position:relative}
+ .salon-banner-image{position:relative;inset:auto;height:clamp(280px,80vw,420px);object-position:82% center;z-index:auto}
+ .salon-banner:after{content:none}
+ .salon-banner h1{font-size:clamp(44px,11.5vw,60px);line-height:1.02}
+ .salon-banner-copy .eyebrow{margin-bottom:12px;font-size:12px}
+ .salon-banner-copy>p{font-size:14px;line-height:1.6;margin:16px 0 20px;max-width:34ch}
+ .salon-banner .actions{flex-wrap:nowrap;gap:8px}
+ .salon-banner .btn{font-size:11px;min-height:44px;padding:12px 10px;gap:8px}
+ .salon-banner .discover{display:none}
+}
